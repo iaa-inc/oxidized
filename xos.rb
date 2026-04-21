@@ -16,10 +16,6 @@ class XOS < Oxidized::Model
     comment cfg
   end
 
-  cmd 'show diagnostics' do |cfg|
-    comment cfg
-  end
-
   cmd 'show licenses' do |cfg|
     comment cfg
   end

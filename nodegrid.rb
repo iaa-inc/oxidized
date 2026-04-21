@@ -8,6 +8,7 @@ class Nodegrid < Oxidized::Model
   comment '# '
 
   cmd 'show system/about/' do |cfg|
+    cfg.gsub! /^uptime: .*\n/, ''
     comment cfg # Show System, Model, Software Version
   end
 
